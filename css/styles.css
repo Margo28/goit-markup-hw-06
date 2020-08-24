@@ -90,7 +90,6 @@ h1{
     text-decoration: none;
  }
  .logo-second{
-    
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 26px;
@@ -99,8 +98,18 @@ h1{
     color: var(--black-color);
     text-decoration: none;
  }
+
  .main-logo{
-    
+    text-decoration: none;
+ }
+
+ .logo-second2{
+     font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
     text-decoration: none;
  }
 
@@ -597,8 +606,12 @@ h1{
     color: var(--title-text-color)
 }
 
+.sub-form{
+    display: flex;
+}
+
 .subscribe{
-    display:inline-flex;
+    display:block;
     
 }
 
@@ -654,7 +667,7 @@ h1{
 
 .page-footer{ 
     padding-bottom: 60px;
-    background-color: rgba(47, 48, 58, 0.8);;
+    background-color: #2F303A;
 }
 
 
@@ -895,8 +908,26 @@ h1{
     margin-bottom: 10px;
 }
 
+.comment-field{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
 
+.comment-field label{
+    margin-bottom: 4px;font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
 
+.comment-field input{
+    padding: 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 .form-group label{
@@ -937,17 +968,25 @@ h1{
     outline: none;
 }
 
-.form-group textarea{
+.comment-field textarea{
     padding: 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 
-.form-group textarea::placeholder{
+.comment-field textarea::placeholder{
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.comment-field:focus-within > .form-input,
+.comment-field:hover > .form-input{
+    border: 1px solid var(--accent-color);
+    outline: none;
 }
 
 .form-button{
@@ -1014,11 +1053,18 @@ h1{
   overflow: hidden;
 }
 
-.form-group .label-chek{
+/* .check-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+} */
+ .label-chek{
     display: flex;
     align-items: center;
     font-size: 14px;
     line-height: 24px;
+    margin-bottom: 30px;
 }
 
 .checkbox-icon{
@@ -1040,6 +1086,7 @@ h1{
 }
 
 .link-check{
+    margin-left: 3px;
     color: var(--accent-color);
     text-decoration: none;
 }
