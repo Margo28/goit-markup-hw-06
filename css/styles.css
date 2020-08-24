@@ -612,7 +612,7 @@ h1{
 
 .subscribe{
     display:block;
-    
+    margin-right: 12px;  
 }
 
 .subscribe input{
@@ -623,9 +623,7 @@ h1{
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     font-size: 16px;
-    line-height: 20px;
-    margin-right: 12px;
-   
+    line-height: 20px; 
 }
 
 .subscribe input::placeholder{
@@ -648,9 +646,6 @@ h1{
     background-color: var(--accent-color);
     text-decoration: none ;
     border: transparent;
-    
-     
-
 }
 
 .primary-button1::after{
@@ -1053,12 +1048,7 @@ h1{
   overflow: hidden;
 }
 
-/* .check-group{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-} */
+
  .label-chek{
     display: flex;
     align-items: center;
